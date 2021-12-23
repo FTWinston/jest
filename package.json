@@ -7,10 +7,10 @@
     "url": "https://github.com/storybookjs/jest.git"
   },
   "scripts": {
-    "build": "yarn build:esm && yarn build:cjs",
+    "build": "npm run build:esm && npm run build:cjs",
     "build:esm": "tsc --project tsconfig.esm.json",
     "build:cjs": "tsc --project tsconfig.cjs.json",
-    "prepublish": "yarn build"
+    "prepublish": "npm run build"
   },
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
